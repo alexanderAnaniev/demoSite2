@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700;900&display=swap');
+
+body{
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Advent Pro', sans-serif;
+    background-color: #f7f7ff;
+}
+
+.navbar{
+    width: 100%;
+}
+.navbar-collapse{
+    width: 100%;
+    padding-left: 350px;
+}
+.navbar a:hover {
+    background: rgba(0, 255, 203, 0.25);
+    box-shadow: 0 0 40px rgba(0,255,203,.7);
+    color: black;
+}
+.bg-special{
+    background-color: white;
+}
+
+.navbar-brand{
+    font-size: 40px;
+}
+
+.nav-item{
+    padding-left: 100px;
+
+}
+.nav-link{
+    font-size: 24px;
+
+}
+
+.navbar-toggler{
+    margin-right: 10px;
+}
+.navbar-nav{
+    margin-left: -90px;
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .btn {
+        margin: 40px -150px;
+    }
+
+    .thumbnail {
+        width: 400px;
+        height: 500px;
+        margin-left: -20px;
+    }
+
+    .grid-group-item-heading {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .grid-group-image {
+        width: 400px;
+        margin-left: -40px;
+    }
+    #copyright{
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+    .navbar-collapse{
+        width: 100%;
+        padding-left: 90px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    #copyright{
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+    .navbar-collapse{
+        width: 100%;
+        padding-left: -50px;
+    }
+
+}
+@media only screen and (max-width: 1300px){
+    #copyright{
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+    .navbar-collapse{
+        width: 100%;
+        margin-left: -100px !important;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    #copyright{
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+    .navbar-collapse{
+        width: 100%;
+
+    }
+
+}
+@media only screen and (max-width: 767px){
+    #copyright{
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+    .navbar-collapse{
+        width: 100%;
+
+    }
+
+}
+@media only screen and (max-width: 480px){
+    .navbar a{
+        margin-left: -50px;
+    }
+
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Userlist</title>
+</head>
+<body>
+<div>
+    <div th:insert="navbar :: navbar"></div>
+</div>
+
+<table border="1">
+  <tr>
+    <td>Name</td>
+  </tr>
+  <tr th:each="person : ${persons}">
+      <td th:text="${person.username}">Testname</td>
+  </tr>
+</table>
+<a th:href="@{/auth/registration}">Add new</a>
+
+</body>
+</html>

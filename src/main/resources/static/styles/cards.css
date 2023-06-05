@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700;900&display=swap');
+
+body{
+    background-color: #f7f7ff;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+#about-page{
+    background-color: #f7f7ff;
+    padding: 60px 120px;
+}
+.thumbnail {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 50px 50px 50px 1px;
+    background: white;
+    /*-webkit-border-radius: 0px;*/
+    /*-moz-border-radius: 0px;*/
+    /*border-radius: 0px;*/
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px 5px;
+    border-color: whitesmoke;
+    width: 550px;
+    height: 780px;
+}
+
+.item.grid-group-item {
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+
+}
+.item.grid-group-item:nth-of-type(odd):hover,.item.grid-group-item:hover {
+    background: rgb(105,65,152);
+
+}
+.item.grid-group-item .grid-group-image {
+    margin-right: 10px;
+
+}
+.item.grid-group-item .thumbnail {
+    margin-bottom: 0px;
+
+
+}
+.item.grid-group-item .caption {
+    padding: 9px 9px 0px 9px;
+
+
+}
+.item.grid-group-item:nth-of-type(odd) {
+    background: #eeeeee;
+
+}
+.item.grid-group-item:before, .item.grid-group-item:after {
+    display: table;
+    content: " ";
+
+}
+.item.grid-group-item img {
+    float: left;
+
+}
+.item.grid-group-item:after {
+    clear: both;
+
+}
+.grid-group-item-text {
+    margin: 40px 100px 20px 70px;
+
+}
+
+.grid-group-item-heading{
+    margin: 15px 100px -10px 70px;
+
+
+
+}
+
+.btn{
+    color: white;
+    background: black;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px 45px;
+    margin: 90px -180px ;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+.btn:hover{
+    background: white;
+    color: black;
+    border-radius: 5px;
+    border-color: black;
+}
+.btn:before{
+    content: '';
+    min-width: calc(100% + 17px);
+    min-height: calc(100% + 17px);
+    border-radius: 2px;
+    border: 2px solid #00FFCB;
+    box-shadow: 0 0 40px rgba(0,255,203,.7);
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .3s ease-in-out 0s;
+}
+.btn:hover:before{
+    opacity: 1;
+    border-radius: 2px;
+    border-color: black;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+
+.grid-group-image{
+    padding: 10px 70px 10px 70px;
+}
+
+
+
+.knoparik{
+    color: black;
+    border: none;
+    font-size: 40px;
+    background: yellow;
+    transform: rotate(-4deg);
+    margin: 60px -60px 5px 80px;
+}
+
+#copyright{
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .btn {
+        margin: 60px -150px!important;
+    }
+
+    .thumbnail {
+        width: 400px;
+        height: 600px !important;
+        margin-left: -20px;
+    }
+
+    .grid-group-item-heading {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .grid-group-item-text{
+        margin-left: 30px;
+    }
+
+    .grid-group-image {
+        width: 400px;
+        margin-left: -40px;
+    }
+
+    .knoparik{
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    #copyright{
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+
+    #copyright{
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+    .navbar a {
+        margin-left: 65px;
+        font-size: 24px;
+    }
+    .item{
+        margin-left: 100px;
+    }
+    #copyright{
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+    #about-page h2 {
+        color: black;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 70px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        margin-left: -55px;
+    }
+
+    #products {
+        grid-column-gap: 70px;
+    }
+
+    .thumbnail {
+        width: 330px;
+        height: 700px;
+        margin-left: -120px !important;
+    }
+
+    .grid-group {
+        margin-left: -65px;
+    }
+
+
+    .item {
+        width: 500px;
+    }
+
+    .btn {
+        margin: -70px 30px !important;
+    }
+
+    .navbar a {
+        margin-left: 70px;
+        font-size: 24px;
+    }
+    #copyright{
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+    }
+    @media only screen and (max-width: 500px){
+        .thumbnail{
+            width: 350px !important;
+            height: 700px !important;
+            margin-left: -135px !important;
+        }
+    }
+
+}
+

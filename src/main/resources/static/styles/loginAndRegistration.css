@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700;900&display=swap');
+
+body{
+    font-family: 'Advent Pro', sans-serif;
+    background-color: #f7f7ff;
+}
+
+input[type="text"], input[type="password"]{
+	width: 300px;
+	height: 50px;
+	font-size: 18px;
+	margin-bottom: 25px;
+    margin-left: 80px;
+	border-radius: 4px;
+	padding-left: 40px;
+}
+
+.form-container{
+    width: 500px;
+	background-color: #fff;
+    font-family: 'Advent Pro', sans-serif;
+	text-align: center;
+	padding: 30px 25px;
+	border-radius: 10px;
+	box-shadow: 0 0 25px -15px rgba(0,0,0,0.3);
+	position: relative;
+}
+.form-container:before,
+.form-container:after{
+	content: '';
+	background-color: black;
+	height: 50%;
+	width: 4px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.form-container:after{
+	top: auto;
+	bottom: 10px;
+	left: auto;
+	right: 10px;
+}
+.form-container .title{
+	color: black;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin: 0 0 15px;
+}
+.form-container .social-links{
+	padding: 0;
+	margin: 0 0 15px;
+	list-style: none;
+}
+.form-container .social-links li{
+	display: inline-block;
+	margin: 0 3px;
+}
+.form-container .social-links li a{
+	color: #555;
+	line-height: 27px;
+	height: 28px;
+	width: 28px;
+	border: 1px solid #555;
+	border-radius: 50%;
+	display: block;
+	transition: all 0.3s ease 0s;
+}
+.form-container .social-links li a:hover{
+	color: #fff;
+	background-color: black;
+}
+.form-container .description{
+	color: #555;
+	font-size: 18px;
+	margin: 0 0 10px;
+	display: block;
+}
+.form-horizontal .form-group{ margin: 0 0 15px; }
+.form-horizontal .form-group:last-of-type{
+	text-align: left;
+	margin-bottom: 35px;
+}
+.form-horizontal .form-control{
+	color: black;
+	background: #F7F8F9;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	height: 40px;
+	padding: 6px 12px;
+	border-radius: 5px;
+	border: 2px solid #F2F5F6;
+	box-shadow: none;
+}
+.form-horizontal .form-control:focus{
+	border-color: rgba(78, 76, 151, 0.5);
+	box-shadow: none;
+}
+.form-horizontal .form-control::placeholder{
+	color: #e1e1e1;
+	font-size: 14px;
+	font-weight: 300;
+}
+.form-horizontal .form-group .check-label{
+	color: #555;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: none;
+	/*margin: -2.5px 0 0;*/
+    margin-top: -3px;
+    margin-right: 70px;
+	vertical-align: text-top;
+	display: inline-block;
+}
+.form-horizontal .form-group .check-label a{
+	color: #4E4C97;
+	transition: all 0.3s ease;
+}
+.form-horizontal .form-group .check-label a:hover{ text-decoration: underline; }
+.form-horizontal .checkbox{
+	height: 17px;
+	width: 17px;
+	min-height: auto;
+    margin-left: 80px;
+	/*margin: 0 3px 0 0;*/
+	border: 1px solid #999;
+	border-radius: 2px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	transition: all 0.3s ease;
+}
+.form-horizontal .checkbox:before{
+	content: '';
+	height: 6px;
+	width: 12px;
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+	opacity: 1;
+	transform: rotate(-45deg);
+	position: absolute;
+	left: 2px;
+	top: 2.5px;
+	transition: all 0.3s ease;
+}
+.form-horizontal .checkbox:checked{
+	background-color: black;
+	border-color: black;
+}
+.form-horizontal .checkbox:checked:before{ opacity: 1; }
+.form-horizontal .checkbox:not(:checked):before{ opacity: 0; }
+.form-horizontal .checkbox:focus{ outline: none; }
+.form-horizontal .btn{
+	color: #fff;
+	background-color: black;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-transform: capitalize;
+	width: 130px;
+	padding: 11px;
+	margin: 0 10px 10px 0;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+.form-horizontal .btn.signin{
+	color: black;
+	background-color: #fff;
+}
+.form-horizontal .btn:hover,
+.form-horizontal .btn:focus{
+	background: white;
+	box-shadow: 0 0 40px rgba(0,255,203,.7);
+	color: black;
+}
+.form-horizontal .btn.signin:hover,
+.form-horizontal .btn.signin:focus{
+}
+#about-page{
+	background-color: #f7f7ff;
+	padding-bottom: 360px;
+}
+#copyright{
+	left:0px;
+	bottom:0px;
+	height:30px;
+	width:100%;
+}
+@media only screen and (max-width: 767px){
+	.form-container {
+		height: 500px;
+		width: 400px;
+		margin-left: 25px;
+	}
+	input[type="text"], input[type="password"]{
+		width: 200px;
+		height: 50px;
+		font-size: 18px;
+		margin-bottom: 25px;
+		margin-left: 80px;
+		border-radius: 4px;
+		padding-left: 40px;
+	}
+
+}
+@media only screen and (max-width: 480px) {
+	.form-container {
+		height: 500px;
+		width: 400px;
+		margin-left: -17px;
+	}
+	input[type="text"], input[type="password"]{
+		width: 200px;
+		height: 50px;
+		font-size: 18px;
+		margin-bottom: 25px;
+		margin-left: 80px;
+		border-radius: 4px;
+		padding-left: 40px;
+	}
+}
+
